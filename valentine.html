@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine’s Day 💖</title>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 80px;
+            color: #2c2c2c;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.3em;
+        }
+
+        .heart {
+            font-size: 3em;
+            animation: beat 1s infinite;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff4d6d;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e63950;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Happy Valentine’s Day 💘</h1>
+
+    <p>
+        Dear <strong>Melvin Chepkurui</strong>,<br><br>
+        This little website was made just for you.<br>
+        You make days brighter, smiles easier,<br>
+        and moments sweeter 🌹
+    </p>
+
+    <div class="heart">❤️</div>
+
+    <button onclick="showLove()">Click for a surprise 💌</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").innerHTML =
+            "You are special, appreciated, and loved. Happy Valentine’s Day 💖";
+        }
+    </script>
+
+</body>
+</html>
+
+
+
